@@ -11,3 +11,9 @@ class Post(models.Model):
 
     def __str__(self):
         return f'[{self.pk}]{self.title}'
+
+    def get_absolute_url(self):
+        return f'/blog/{self.pk}'
+
+    def test_function(self):
+        return f'test 함수'
