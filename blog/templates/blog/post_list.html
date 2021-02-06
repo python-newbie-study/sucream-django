@@ -20,9 +20,6 @@
     <div class="container my-3">
         <div class="row">
             <div class="col-md-8 col-lg-9">
-                <h1>블로그 인덱스 페이지</h1>
-
-                <button onclick="tmp()">눌러봐</button><br />
                 <h1>Blog</h1>
 
                 <div class="list-group">
@@ -32,8 +29,10 @@
                             <h5 class="mb-1"><span>[{{ p.id }}]</span> {{ p.title }}</h5>
                             <small>{{ p.created_at }}</small>
                         </div>
-                        <p class="mb-1">{{ p.content }}</small>
-                            <p>{{ p.test_function }}</p>
+                        {% if p.hook_text != "" %}
+                        <p class="text-muted">{{ p.hook_text }}</p>
+                        {% endif %}
+                        <p class="mb-1">{{ p.content | truncatewords:45 }}</p>
                     </a>
                     {% endfor %}
                 </div>

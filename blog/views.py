@@ -23,6 +23,10 @@ class PostDetail(DetailView):
 #         }
 #     )
 
+# vue 학습을 위해 추가
+def vue_test(request):
+    return render(request, 'blog/test.html')
+
 def single_post_page(request, pk):
     post = Post.objects.get(pk=pk)
 

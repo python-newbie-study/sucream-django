@@ -1,0 +1,53 @@
+/* .layout {
+    height: 310px;
+} */
+
+.top {
+    background-color: lawngreen;
+    border: 1px solid black;
+}
+
+.top:after{ clear: both; display: block; content: '' }
+.top .item {
+	float: left;
+	width: 100px;
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+.top .item.last {
+	float: right;
+	border-right: none;
+}
+
+.container .main {
+    height: 400px;
+    border: 1px solid black;
+}
+
+.container .main .left-menu {
+    float: left;
+    width: 15%;
+    box-sizing: border-box;
+    height: inherit;
+    padding-top: 10px;
+    background-color: lightblue;
+    border-right: 1px solid black;
+}
+.container .main .left-menu .item {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .main .contents {
+    float: left;
+    width: 85%;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: scroll;
+    word-break: break-all;
+}
+
+.main .contents .title {
+    font-weight: bold;
+    font-size: 30px;
+}

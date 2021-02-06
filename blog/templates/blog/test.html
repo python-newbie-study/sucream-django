@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+  <title>Test</title>
+</head>
+
+<body>
+  <div class="layout">
+    <div class="top">
+      <div class="item">
+        <a href="#">뭔가 1</a>
+      </div>
+      <div class="item">
+        <a href="#">뭔가 2</a>
+      </div>
+      <div class="item">
+        <a href="#">뭔가 3</a>
+      </div>
+      <div class="item last">
+        <a href="#">Login</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main">
+        <div class="left-menu">
+          <div class="item">
+            <a href="#">메뉴 1</a>
+          </div>
+          <div class="item">
+            <a href="#">메뉴 2</a>
+          </div>
+          <div class="item">
+            <a href="#">메뉴 3</a>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="article">
+            <div class="title">제목쓰</div>
+            <div class="content">
+              본문입니다.fsdfjedgdflfkㅇㅇㅇㅇㅇㅇㅇfdffddfdfsfasdfasdfsafsdfsfsafdasfsdfasfsafdasfasdfaksdfklsadhfashdkjfhdsfjjhdskfhdjfklasjdflkjaslkdjfkla;sjdfkajsfjalewkjafioaejfoi;asjldfkjsdl;kfj;akdsjf;aljdl;ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇsdjfklsdj flksjdlkfjsdl kfjlsdjfkjsdlfsdjflsjdlfjlsdfjlsdjflsdjflksjdlfs
+            </div>            
+          </div>
+          <div class="comment">
+            댓글입니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="app">
+    [[ message ]]
+  </div>
+  <div id="app2">
+    <p>[[ message ]]</p>
+    <button v-on:click="test">Reverse Message</button>
+  </div>
+
+  <div id="app3">
+    <ol>
+      <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id">
+      </todo-item>
+    </ol>
+  </div>
+
+  <script src="{% static 'blog/js/test.js' %}"></script>
+</body>
+
+</html>
